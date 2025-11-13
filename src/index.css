@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+/* Kaskita Brand Colors */
+:root {
+  --kaskita-orange: #fb682c;
+  --kaskita-blue: #00233a;
+  --kaskita-white: #fefefe;
+  --kaskita-orange-light: #ffa06d;
+  --kaskita-blue-light: #003d5c;
+}
+
+/* Claymorphism Base Styles */
+@layer components {
+  .clay-card {
+    background: linear-gradient(135deg, rgba(254, 254, 254, 0.9) 0%, rgba(254, 254, 254, 0.8) 100%);
+    border-radius: 30px;
+    box-shadow:
+      20px 20px 60px rgba(0, 35, 58, 0.15),
+      -20px -20px 60px rgba(255, 255, 255, 0.7),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+      inset -2px -2px 4px rgba(0, 35, 58, 0.05);
+    border: 1px solid rgba(254, 254, 254, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .clay-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      25px 25px 70px rgba(0, 35, 58, 0.2),
+      -25px -25px 70px rgba(255, 255, 255, 0.8),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 4px rgba(0, 35, 58, 0.08);
+  }
+
+  .clay-button-orange {
+    background: linear-gradient(135deg, #fb682c 0%, #ff8856 100%);
+    border-radius: 20px;
+    box-shadow:
+      8px 8px 20px rgba(251, 104, 44, 0.3),
+      -8px -8px 20px rgba(255, 136, 86, 0.2),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .clay-button-orange:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      10px 10px 25px rgba(251, 104, 44, 0.4),
+      -10px -10px 25px rgba(255, 136, 86, 0.3),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.4);
+  }
+
+  .clay-button-blue {
+    background: linear-gradient(135deg, #00233a 0%, #003d5c 100%);
+    border-radius: 20px;
+    box-shadow:
+      8px 8px 20px rgba(0, 35, 58, 0.3),
+      -8px -8px 20px rgba(0, 61, 92, 0.2),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .clay-button-blue:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      10px 10px 25px rgba(0, 35, 58, 0.4),
+      -10px -10px 25px rgba(0, 61, 92, 0.3),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.15);
+  }
+
+  .clay-icon-box {
+    background: linear-gradient(135deg, rgba(254, 254, 254, 0.95) 0%, rgba(254, 254, 254, 0.85) 100%);
+    border-radius: 25px;
+    box-shadow:
+      12px 12px 30px rgba(0, 35, 58, 0.12),
+      -12px -12px 30px rgba(255, 255, 255, 0.8),
+      inset 3px 3px 6px rgba(255, 255, 255, 0.5),
+      inset -3px -3px 6px rgba(0, 35, 58, 0.05);
+    border: 1px solid rgba(254, 254, 254, 0.4);
+  }
+
+  .clay-navbar {
+    background: linear-gradient(180deg, rgba(254, 254, 254, 0.95) 0%, rgba(254, 254, 254, 0.9) 100%);
+    backdrop-filter: blur(20px);
+    box-shadow:
+      0 8px 32px rgba(0, 35, 58, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 35, 58, 0.05);
+  }
+
+  .clay-hero-bg {
+    background: linear-gradient(135deg, #00233a 0%, #003d5c 50%, #fb682c 100%);
+    position: relative;
+  }
+
+  .clay-hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      radial-gradient(circle at 20% 50%, rgba(251, 104, 44, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(0, 61, 92, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .clay-badge {
+    background: linear-gradient(135deg, rgba(251, 104, 44, 0.15) 0%, rgba(251, 104, 44, 0.05) 100%);
+    border-radius: 15px;
+    box-shadow:
+      4px 4px 12px rgba(251, 104, 44, 0.1),
+      -4px -4px 12px rgba(255, 255, 255, 0.5),
+      inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(251, 104, 44, 0.2);
+  }
+}
+
+/* Global Styles */
+body {
+  background-color: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fefefe;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #fb682c 0%, #00233a 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff8856 0%, #003d5c 100%);
+}

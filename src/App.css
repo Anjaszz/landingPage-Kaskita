@@ -1,0 +1,42 @@
+/* Kaskita App Styles - Claymorphism Design */
+
+.text-kaskita-orange {
+  color: #fb682c;
+}
+
+.text-kaskita-blue {
+  color: #00233a;
+}
+
+.bg-kaskita-orange {
+  background-color: #fb682c;
+}
+
+.bg-kaskita-blue {
+  background-color: #00233a;
+}
+
+.border-kaskita-orange {
+  border-color: #fb682c;
+}
+
+.border-kaskita-blue {
+  border-color: #00233a;
+}
+
+/* Hover states */
+.hover\:bg-kaskita-orange:hover {
+  background-color: #ff8856;
+}
+
+.hover\:bg-kaskita-blue:hover {
+  background-color: #003d5c;
+}
+
+.hover\:text-kaskita-orange:hover {
+  color: #fb682c;
+}
+
+.hover\:text-kaskita-blue:hover {
+  color: #00233a;
+}

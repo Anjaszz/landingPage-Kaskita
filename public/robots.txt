@@ -1,0 +1,12 @@
+# robots.txt for KASKITA
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /privacy-policy
+
+# Disallow admin or sensitive areas (if any in future)
+Disallow: /admin
+Disallow: /api
+
+# Sitemap
+Sitemap: https://kaskita.app/sitemap.xml
