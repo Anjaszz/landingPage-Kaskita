@@ -19,9 +19,9 @@ const About = () => {
       photo: anjas,
       bio: 'Visioner di balik KASKITA dengan 10+ tahun pengalaman di industri fintech.',
       social: {
-        linkedin: '#',
-        facebook: '#',
-        instagram: '#'
+        linkedin: 'https://www.linkedin.com/in/anjas-rani-562396212',
+        facebook: 'https://www.facebook.com/AnjasRanii',
+        instagram: 'https://instagram.com/anjaszz_'
       }
     },
     {
@@ -38,7 +38,7 @@ const About = () => {
     {
       name: 'Yovela Kalista Avansa',
       role: 'Lead Developer',
-      photo: 'https://ui-avatars.com/api/?name=Budi+Santoso&size=200&background=fb682c&color=fff&bold=true',
+      photo: 'https://ui-avatars.com/api/?name=Yovela+Avansa&size=200&background=fb682c&color=fff&bold=true',
       bio: 'Full-stack developer yang ahli dalam React Native dan Node.js.',
       social: {
         linkedin: '#',
@@ -269,15 +269,15 @@ const About = () => {
                       className="w-full h-full rounded-full object-cover"
                     />
                   </div>
-                  <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
+                  {/* <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
                     <div className="clay-badge px-3 py-0.5">
                       <span className="text-xs font-bold text-kaskita-orange">{member.role}</span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-kaskita-blue mb-2">{member.name}</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{member.bio}</p>
+                  {/* <p className="text-gray-600 mb-4 leading-relaxed">{member.bio}</p> */}
                   <div className="flex justify-center space-x-3">
                     <a href={member.social.linkedin} className="clay-icon-box w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
                       <i className="fab fa-linkedin-in text-kaskita-blue"></i>

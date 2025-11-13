@@ -70,7 +70,7 @@ const Footer = () => {
                 <i className="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform"></i>
                 Syarat & Ketentuan
               </a></li>
-              <li><a href="#" className="text-blue-100 hover:text-kaskita-orange transition flex items-center group">
+              <li><a href="http://wa.me/6282258040148" className="text-blue-100 hover:text-kaskita-orange transition flex items-center group">
                 <i className="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform"></i>
                 Kontak
               </a></li>
